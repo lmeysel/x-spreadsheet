@@ -9,6 +9,11 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/myliang/x-spreadsheet.svg)
 [![Join the chat at https://gitter.im/x-datav/spreadsheet](https://badges.gitter.im/x-datav/spreadsheet.svg)](https://gitter.im/x-datav/spreadsheet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## Why another fork
+This fork has two goals:
+* using scss-stylesheets
+* do not import stylesheets in js but in css explicitly
+
 > A web-based JavaScript spreadsheet
 
 <p align="center">

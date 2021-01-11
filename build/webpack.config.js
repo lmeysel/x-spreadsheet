@@ -5,7 +5,7 @@ const resolve = dir => path.join(__dirname, '..', dir);
 
 module.exports = {
   entry: {
-    xspreadsheet: './src/index.js',
+    xspreadsheet: ['./src/index.js', './src/index.scss'],
   },
   module: {
     rules: [
@@ -33,6 +33,14 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'less-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
         ],
       },
       {

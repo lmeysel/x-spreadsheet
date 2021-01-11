@@ -32,7 +32,8 @@
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "test": "nyc ./node_modules/mocha/bin/mocha --require @babel/register --recursive test",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 31ecdb12-8ecb-46f7-a486-65c2516307dd",
-    "postinstall": "opencollective-postinstall"
+    "postinstall": "opencollective-postinstall",
+    "sass": "less2sass src/index.less"
   },
   "keywords": [
     "javascript",
@@ -55,9 +56,11 @@
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "less2sass": "^1.0.3",
     "mini-css-extract-plugin": "^0.4.4",
     "mocha": "^5.2.0",
     "nyc": "^13.3.0",
+    "sass-loader": "^10.1.1",
     "style-loader": "^0.23.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.1.0",
